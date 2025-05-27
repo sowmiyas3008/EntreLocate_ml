@@ -31,6 +31,9 @@ html, body, #root {
     justify-content: center;
     text-align: center;
 }
+.pg1 img{
+  margin-left:-180px;
+}
 
 /* Navbar */
 .navbar {

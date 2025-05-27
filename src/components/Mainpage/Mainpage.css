@@ -31,7 +31,7 @@
 /* Image Styling */
 .sec1 img, .sec2 img, .sec3 img {
     width: 50%;
-    max-height: 300px;
+    max-height: 380px;
     object-fit: cover;
     border-radius: 0 10px 10px 0;
 }

@@ -7,6 +7,9 @@ import { doc, setDoc } from 'firebase/firestore';
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
 import Signinwithgoogle from '../Signinwithgoogle';
 import { useNavigate } from 'react-router-dom';
+import pg1 from "C:\\Users\\balas\\Documents\\EntreLocate\\entreloc\\src\\assets\\pg1.png";
+import logo from "../../assets/logo.png";
+
 
 const Hero = () => {
   // Creating references for sections
@@ -145,7 +148,7 @@ const Hero = () => {
             <li onClick={() => scrollToSection(servicesRef)}>Services</li>
           </ul>
 
-          <img src="" className='logo' alt="logo"/>
+          <img src={logo} className='logo' alt="logo"/>
           <div className="log">
             <button onClick={() => setIsLoginModalOpen(true)}>log in</button>
           </div>
@@ -313,7 +316,7 @@ const Hero = () => {
           </ul>
         </div>
         <div className='right-content'>
-          <img src="" className='pg2-pic' alt="pic"/>
+          <img src={pg1} className='pg2-pic' alt="pic"/>
         </div>
       </section>
 

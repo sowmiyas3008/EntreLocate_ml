@@ -6,6 +6,10 @@ import "./Mainpage.css";
 import { auth, db } from "C:\\Users\\balas\\Documents\\EntreLocate\\entreloc\\src\\firebaseConfig";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import Newnavbar from "../Newnavbar/Newnavbar"
+import locpic from "C:\\Users\\balas\\Documents\\EntreLocate\\entreloc\\src\\assets\\loc.png";
+import grow from "C:\\Users\\balas\\Documents\\EntreLocate\\entreloc\\src\\assets\\grow.png";
+import bus from "C:\\Users\\balas\\Documents\\EntreLocate\\entreloc\\src\\assets\\bus.png";
+
 
 const Mainpage = () => {
   const [popupAOpen, setPopupAOpen] = useState(false);
@@ -173,7 +177,7 @@ const Mainpage = () => {
       <Newnavbar/>
       <div className="chumma"></div>
       <section className="sec1">
-        <img src="" alt="loc" />
+        <img src={locpic} alt="loc" />
         <div className="loc-content">
           <h1>Smart Location Finder</h1>
           <p>Unlock the best locations to launch your business with AI-driven insights and interactive maps.</p>
@@ -193,11 +197,11 @@ const Mainpage = () => {
             click here
           </button>
         </div>
-        <img src="" alt="loc" />
+        <img src={bus} alt="loc" />
       </section>
       <div className="chumma"></div>
       <section className="sec3">
-        <img src="" alt="loc" />
+        <img src={grow} alt="loc" />
         <div className="loc-content">
           <h1> Growth Tracker</h1>
           <p>Track profits, expenses, and trends in a sleek, visual way to grow your business smarter.</p>
